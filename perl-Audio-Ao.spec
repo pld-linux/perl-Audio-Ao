@@ -9,7 +9,7 @@ Summary:	Audio::Ao - wrapper for the Ao audio library
 Summary(pl):	Audio::Ao - wrapper dla biblioteki d¼wiêkowej Ao
 Name:		perl-Audio-Ao
 Version:	0.01
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +23,6 @@ BuildRequires:	perl-Parse-RecDescent
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Inline-C
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
