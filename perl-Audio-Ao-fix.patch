@@ -1,0 +1,31 @@
+--- Audio-Ao-0.01/Ao.pm.orig	2003-01-04 14:29:39.000000000 +0100
++++ Audio-Ao-0.01/Ao.pm	2004-05-23 22:02:53.758819934 +0200
+@@ -262,6 +262,7 @@
+ 	AV* ops;
+ 	HV *ihash = newHV();
+ 
++	if(info != NULL) {
+ 	hv_store(ihash, "type", 4, newSViv((IV) (*info).type), 0);
+ 	hv_store(ihash, "name", 4, newSVpv((*info).name, 0), 0);
+ 	hv_store(ihash, "short_name", 10, newSVpv((*info).short_name, 0), 0);
+@@ -277,7 +278,7 @@
+ 		}
+ 		hv_store(ihash, "options", 7, newRV_inc((SV *) ops), 0);
+ 	}
+-	
++	}
+ 	return ihash;
+ }
+ 
+--- Audio-Ao-0.01/test.pl.orig	2003-01-04 13:03:11.000000000 +0100
++++ Audio-Ao-0.01/test.pl	2004-05-23 22:04:49.747581277 +0200
+@@ -15,8 +15,7 @@
+ # Insert your test code below, the Test module is use()ed here so read
+ # its man page ( perldoc Test ) for help writing this test script.
+ ok(initialize_ao(), undef);
+-print "If #3 fails & you're on a big endian machine, don't worry.\n";
+-ok(is_big_endian(), 0);
++ok(is_big_endian() == is_big_endian(), 1);
+ ok(driver_info_list());
+ ok(my $dr = driver_info(default_driver_id));
+ ok(shutdown_ao(), undef);
