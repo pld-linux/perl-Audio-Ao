@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Audio
-%define	pnam	Ao
+%define		pdir	Audio
+%define		pnam	Ao
 Summary:	Audio::Ao - wrapper for the Ao audio library
 Summary(pl):	Audio::Ao - wrapper dla biblioteki d¼wiêkowej Ao
 Name:		perl-Audio-Ao
