@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	Ao
 Summary:	Audio::Ao - wrapper for the Ao audio library
-Summary(pl):	Audio::Ao - wrapper dla biblioteki d¼wiêkowej Ao
+Summary(pl.UTF-8):   Audio::Ao - wrapper dla biblioteki dÅºwiÄ™kowej Ao
 Name:		perl-Audio-Ao
 Version:	0.01
 Release:	3
@@ -31,11 +31,11 @@ programs to output PCM audio data to the native audio devices on a
 wide variety of platforms.". Libao currently supports OSS, ESD, ALSA,
 Sun audio, and aRts.
 
-%description -l pl
-Modu³ daje dostêp do Libao - "wieloplatformowej biblioteki
-pozwalaj±cej programom odtwarzaæ dane d¼wiêkowe PCM na urz±dzeniach
-d¼wiêkowych natywnych dla wielu platform". Libao aktualnie obs³uguje
-d¼wiêk OSS, ESD, ALSA, Sun audio i aRts.
+%description -l pl.UTF-8
+ModuÅ‚ daje dostÄ™p do Libao - "wieloplatformowej biblioteki
+pozwalajÄ…cej programom odtwarzaÄ‡ dane dÅºwiÄ™kowe PCM na urzÄ…dzeniach
+dÅºwiÄ™kowych natywnych dla wielu platform". Libao aktualnie obsÅ‚uguje
+dÅºwiÄ™k OSS, ESD, ALSA, Sun audio i aRts.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
