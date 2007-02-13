@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	Ao
 Summary:	Audio::Ao - wrapper for the Ao audio library
-Summary(pl.UTF-8):   Audio::Ao - wrapper dla biblioteki dźwiękowej Ao
+Summary(pl.UTF-8):	Audio::Ao - wrapper dla biblioteki dźwiękowej Ao
 Name:		perl-Audio-Ao
 Version:	0.01
 Release:	3
