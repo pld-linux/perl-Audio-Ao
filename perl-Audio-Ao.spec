@@ -46,6 +46,7 @@ dźwięk OSS, ESD, ALSA, Sun audio i aRts.
 	INSTALLDIRS=vendor
 
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
