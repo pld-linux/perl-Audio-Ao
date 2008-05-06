@@ -12,9 +12,10 @@ Version:	0.01
 Release:	5
 License:	GPL v2+
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Audio/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	37b1c67199c90aff616d4c1fff381d61
 Patch0:		%{name}-fix.patch
+URL:		http://search.cpan.org/dist/Audio-Ao/
 BuildRequires:	libao-devel
 %if %{with tests}
 BuildRequires:	perl-Inline-C
