@@ -66,6 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Audio/Ao.pm
 %dir %{perl_vendorarch}/auto/Audio/Ao
-%{perl_vendorarch}/auto/Audio/Ao/Ao.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/Ao/Ao.so
 %{_mandir}/man3/*
