@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	Ao
 Summary:	Audio::Ao - wrapper for the Ao audio library
